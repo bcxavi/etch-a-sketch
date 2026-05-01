@@ -15,8 +15,15 @@ function createGrid(size) {
     square.style.width = `${squareSize}px`;
     square.style.height = `${squareSize}px`;
 
+    let hoverCount = 0;
+
     square.addEventListener("mouseenter", () => {
-      square.classList.add("painted");
+      if (hoverCount < 10) {
+        hoverCount++;
+
+        square.style.backgroundColor = "black";
+        square.style.opacity = hoverCount / 10;
+      }
     });
 
     gridContainer.appendChild(square);
