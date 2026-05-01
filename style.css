@@ -7,11 +7,10 @@
   flex-wrap: wrap;
 }
 
-.square{
-    width: 16px;
-    height: 16px;
+.square {
+  box-sizing: border-box;
 }
 
-.painted{
+.painted {
   background-color: black;
 }
