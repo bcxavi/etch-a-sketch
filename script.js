@@ -18,11 +18,11 @@ function createGrid(size) {
     let hoverCount = 0;
 
     square.addEventListener("mouseenter", () => {
-      if (hoverCount < 10) {
+      if (hoverCount < 4) {
         hoverCount++;
 
         square.style.backgroundColor = "black";
-        square.style.opacity = hoverCount / 10;
+        square.style.opacity = hoverCount / 4;
       }
     });
 
