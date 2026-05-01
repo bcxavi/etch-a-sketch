@@ -1,16 +1,75 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #e5e5e5;
+}
+
+.main {
+  position: relative;
+
+  background: #d40000;
+  padding: 28px 32px 36px;
+
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
 .container {
   width: 256px;
   height: 256px;
-  border: 2px solid black;
+
+  background: white;
+  border: 8px solid #b30000;
+  border-radius: 10px;
 
   display: flex;
   flex-wrap: wrap;
 }
 
-.square {
-  box-sizing: border-box;
+.title {
+  color: #f5d36a;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.painted {
-  background-color: black;
+.squares-btn {
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #f5d36a;
+  color: #8b0000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.knob {
+  position: absolute;
+
+  width: 72px;
+  height: 72px;
+
+  background: white;
+  border-radius: 50%;
+
+  bottom: 24px;
+}
+
+.left-knob {
+  left: -30px;
+}
+
+.right-knob {
+  right: -30px;
 }
