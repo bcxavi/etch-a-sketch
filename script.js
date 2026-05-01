@@ -5,5 +5,9 @@ for (let i = 0; i < 256; i++) {
 
   square.classList.add("square");
 
+  square.addEventListener("mouseenter", () => {
+    square.classList.add("painted");
+  });
+
   container.appendChild(square);
 }
